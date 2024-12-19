@@ -43,29 +43,54 @@ Each roll is a First roll until you roll a six. Then you move on to Second roll.
         5. Rooftop Sheep (scribble a sheep on a cabin rooftop)
         6. Dolly Sheep (scribble sheep clones in all remaining cells)
 
-## Resolving actions
+## Cabin
+The cabin protects the sheep from wolf attacks.
+
+## Resolving disasters
 Trouble always comes from a specific direction. When the game starts,the direction is north. After resolving trouble, the direction shifts in a clockwise manner to east - south - west - north etc. tip: Place your eraser as a marker of the current direction to keep track.
 
 ### Wolf
-The wolf attacks from the woods. 
+The wolf attacks from the woods. (If no sheep are next to trees skip this disaster.) 
 
-The wolf will eat a sheep next to a tree in the current direction.
-
-(If no sheep are next to trees skip this disaster.)
-
-Erase the sheep and replace it with a wolf.
+- The wolf will eat a sheep next to a tree in the current direction.
+> Erase the sheep and replace it with a wolf.
 
 
 ### Flood
-The flood always flood all existing water cells with one in the current direction.
+The flood always flood all existing water cells with one in the current direction. (If there is no water on the grid skip this disaster.) 
 
-The flood will destroy sheep, cabin, tree and wolf.
+- The flood will destroy sheep, cabin, tree and wolf.
+- The flood can not move over mountains.
+- The flood will put out a fire but not flood the cell. (Creating a free space.)
 
-The flood can not move over mountains.
+> Draw water on flooded cells.
 
-The flood will put out a fire but not flood the cell. (Creating a free space.)
+### Fire
+The fire starts at the first burnable object in the current direction. (If there are no burnable objects on the first row skip this disaster.)
 
-Draw water on flooded cells.
+- The fire will spread from the first burnable object to all adjecent burnable objects.
 
+> Draw fire on all affected cells.
+
+### Storm
+The storm only affects fire. (If there is no fire skip this disaster.)
+Roll the die to decide storm strength. 
+
+Strength 1-3
+The gentle storm puts out all fires on the grid.
+
+Strength 4-6
+The storm operates like the flood but for fire. 
+
+-The storm will spread fire once cell from each fire in the current direction.
+
+> Draw fire on affected cells.
+
+### Lightning
+The lightning strikes at one point. Roll the die twice to find the x and y position.
+
+- The lightning strike causes a fire.
+- Unless it strikes in water, then it evaporate the water in that cell.
+- If it hits a mountain a **volcano** is created. (Roll die again to determine lava(fire) spread.
 
 
